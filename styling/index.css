@@ -1,0 +1,94 @@
+        /* Create the animation */
+        @keyframes diagonalMove {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        body {
+            animation: diagonalMove 120s linear infinite;
+            background-image: url('./images/pattern1.jpg'); 
+            background-repeat: repeat; 
+            background-size:initial;
+        }
+
+        .folder-container {
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .nav-tabs {
+            margin-bottom: 0;
+            border: 1px solid #ccc;
+            width: fit-content;
+            border-radius: 15px;
+            border-bottom: none;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            background-color: rgba(70, 110, 150);
+        }
+
+        .nav-tabs .nav-link {
+            color: white;
+            border-bottom: none;
+            border-top-left-radius: 15px;
+            border-left: none;
+            border-top-right-radius: 15px;
+            background-color: rgba(100, 150, 200, 0.85);
+        }
+
+        .nav-tabs .nav-link[aria-selected="false"] {
+            background-color: rgba(70, 110, 150);
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: rgba(100, 150, 200, 0.85);
+
+        }
+
+        .tab-content {
+            z-index: 3;
+            position: relative;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background-color: rgba(100, 150, 200, 0.85);
+            border-top-left-radius: 0px;
+        }
+
+        .profile {
+            border-bottom: 2px solid #ccc;
+        }
+
+        .profile img {
+            height: 250px;
+            width: 250px;
+            object-fit: cover;
+        }
+
+        .tab-pane a.github {
+            text-decoration: none;
+            color: black;
+            font-size: xx-large;
+            font-weight: 600;
+        }
+
+
+        @media (max-width: 575.98px) {
+            .nav-tabs{
+                width: 100%;
+            }
+            .nav-tabs .nav-item{
+                font-size: xx-small;
+            }
+            .tab-content{
+                border-top-right-radius: 0px;
+            }
+            .nav-tabs .nav-link {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
